@@ -9,7 +9,8 @@ $phone=$_POST['contact'];
 $headers="MIME-VERSION: 1.0" . "\r\n";
 $headers .="Content-type=text/html; charset=utf-8" . "\r\n";
 $headers="From : <$personemail> \r\n";
-
+if(isset($_POST['submit']))
+{
 if(mail($to,$subject,$message, $headers))
 {
 	echo "<script> 
@@ -20,5 +21,7 @@ else
 {
     echo "<script>alert('Sorry!! Could not send your mail!!Please retry');</script>";
     
-	}
+}
+}
+
 ?>
