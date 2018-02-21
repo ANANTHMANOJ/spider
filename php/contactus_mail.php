@@ -1,6 +1,6 @@
 <?php
 
-$to = "ananya.kokala@gmail.com";    
+$to = "nagabhushan.pai@gmail.com";    
 $message = $_POST['message'];
 $subject=$_POST['sendersubject'];
 $personemail=$_POST['senderemail'];
@@ -13,7 +13,7 @@ $headers="From : <$personemail> \r\n";
 if(mail($to,$subject,$message, $headers))
 {
 	echo "<script> 
-	         alert('Your message sent successfully! Thank you $person, for your response'); 
+	         alert('Your message sent successfully! Thank you for your response'); 
 	      </script>";
 }
 else 
