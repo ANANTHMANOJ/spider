@@ -21,6 +21,9 @@
 	<![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css">
 	<script src="assets/js/index.js"></script>
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<!-- Fixed navbar -->
@@ -186,32 +189,37 @@
     <div id="lorem">
       <p>
 		<form method="POST" action="#">
-		<p>Name</p>
-		<div class="select_mate">
-		<input type="text" class="popup" placeholder="ex: Sachi"/><br/>
+		 <div class="col-md-12 ">
+			<div class="w3-row w3-section">
+			<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+			<div class="w3-rest">
+			<input class="w3-input w3-border form-control" name="first" type="text" placeholder="Name">
+			</div>
+			</div>
 		</div>
-		<p>Mobile Number</p>
-		<div class="select_mate">
-		<input type="text" class="popup" placeholder="ex: 9483568923"/><br/>
+		<div class="col-md-12 ">
+			<div class="w3-row w3-section">
+			<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+			<div class="w3-rest">
+			<input class="w3-input w3-border form-control" name="first" type="text" placeholder="Moblie">
+			</div>
+			</div>
 		</div>
-		You are<br/>
-		<div class="select_mate" data-mate-select="active" >
 		
-			<select name="" onclick="return false;" id="">
-				<option value=""  >--select your option-- </option>
-				<option value="student">Student</option>
-				<option value="parent" >Parent</option>
-				<option value="other">Others</option>
-		</select>
-		<p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg">
-				<path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-				<path d="M0-.75h24v24H0z" fill="none"/>
-		</svg></span>
-		<div class="cont_list_select_mate">
-		<ul class="cont_select_int">  </ul> 
-		</div>
-  </div>
-   <p>Course you are looking for</p>
+		
+		<div class="col-md-12">
+		<label>You are :</label>
+		<label class="radio">
+    <input id="radio1" type="radio" name="you" value="student" checked>
+    <span class="outer"><span class="inner"></span></span>Student</label>
+	<label class="radio">
+    <input id="radio1" type="radio" name="you" value="parent" checked>
+    <span class="outer"><span class="inner"></span></span>Parent</label>
+	<label class="radio">
+    <input id="radio1" type="radio" name="you" value="other" checked>
+    <span class="outer"><span class="inner"></span></span>Other</label>
+   <label>Course you are looking for</label>
+   <br/>
    <div class="col-md-4">
   <input type="checkbox" name="course" value="cpt">CPT
   </div>
@@ -231,54 +239,54 @@
   <input type="checkbox" name="course" value="sap">SAP
   </div>
   
-  <p>Your Next attempt due </p>
-  <div class="select_mate" data-mate-select="active" >
-			<select name="" onclick="return false;" id="">
-				<option value=""  >--select your option-- </option>
-				<option value="may'18">May'18</option>
-				<option value="nov'18" >Nov'18</option>
-				<option value="may'19">May'19</option>
-				<option value="nov'19">Nov'19</option>
-				<option value="after">After Nov'19</option>
-			</select>
-		<p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg">
-				<path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-				<path d="M0-.75h24v24H0z" fill="none"/>
-		</svg></span>
-		<div class="cont_list_select_mate">
-		<ul class="cont_select_int">  </ul> 
-		</div>
-  </div>
- 
-  
-  <p>Your Articleship</p>
-   <div class="col-md-4">
-  <input type="radio" name="article" value="completed" id="test3"> Completed
-  </div>
-   <div class="col-md-4">
-  <input type="radio" name="article" value="joined"> Just joined
-  </div>
-   <div class="col-md-4">
-   <input type="radio" name="article" value="joined"> Last 6 mounts
-   </div>
-  <p>Is it your first attempt ?</p>
-  <div class="col-md-6">
-  <input type="radio" name="attempt" value="yes"> Yes
-  </div>
-  <div class="col-md-6">
-  <input type="radio" name="attempt" value="no"> No
-  </div>
+  <label>Your Next attempt due </label>
+  <br/>
+  <label class="radio">
+    <input id="radio1" type="radio" name="due" value="may_18" checked>
+    <span class="outer"><span class="inner"></span></span>May'18</label>
+	<label class="radio">
+    <input id="radio1" type="radio" name="due" value="nov_18" checked>
+    <span class="outer"><span class="inner"></span></span>Nov'18</label>
+	<label class="radio">
+    <input id="radio1" type="radio" name="due" value="may_19" checked>
+    <span class="outer"><span class="inner"></span></span>May'19</label>
+	<label class="radio">
+    <input id="radio1" type="radio" name="due" value="nov_19" checked>
+    <span class="outer"><span class="inner"></span></span>Nov'19</label>
+	<label class="radio">
+    <input id="radio1" type="radio" name="due" value="after_nov_19" checked>
+    <span class="outer"><span class="inner"></span></span>After Nov'19</label>
+	  <br/>
+  <label>Have you completed articleship</label>
+<br/>
+   <label class="radio">
+    <input id="radio1" type="radio" name="art" value="yes" checked>
+    <span class="outer"><span class="inner"></span></span>Yes</label>
+	<label class="radio">
+    <input id="radio1" type="radio" name="art" value="just_joined" checked>
+    <span class="outer"><span class="inner"></span></span>Just Joined</label>
+	<label class="radio">
+    <input id="radio1" type="radio" name="art" value="last-6-month" checked>
+    <span class="outer"><span class="inner"></span></span>Last 6 Months</label>
+  <label>Is it your first attempt ?</label>
+  <br/>
+  <label class="radio">
+    <input id="radio1" type="radio" name="attempt" value="yes" checked>
+    <span class="outer"><span class="inner"></span></span>Yes</label>
+	<label class="radio">
+    <input id="radio1" type="radio" name="attempt" value="no" checked>
+    <span class="outer"><span class="inner"></span></span>No</label>
   <div class="col-md-12 submitting"> 
   <div class="col-md-6">
-	<input class="close agree" type="submit" value="Submit"/>
+	<input class="close agree"  style="background-color:green;"type="submit" value="Submit"/>
 	</div>
   <div class="col-md-3">
     <input class="close agree" type="submit" value="Skip" onclick="#"/>
 	</div>
 	</div>
-  <!-- Custom select structure --> 
-
-
+	</div>
+	
+	
 </div> <!-- End div center   -->
 
   
