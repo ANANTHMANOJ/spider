@@ -8,8 +8,9 @@ body {
 }
 /*General*/
 h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
+	font-weight: 900;
 	font-family: 'Oswald', sans-serif;
+	
 }
 h1, .h1, h2, .h2, h3, .h3 {
 	margin-top: 30px;
@@ -262,13 +263,15 @@ color: #fff !important;
     width: 100%;
     left: 0px;
     right: 0px;
-    top: 30%;
+    top: 20%;
 }
 .heading-text h1{
     font-size: 45px;
+	font-weight:900;
 }
 .heading-text p{
-font-size: 27px;
+font-size: 22px;
+margin:1%;
 }
 /* Highlights*/
 .highlight {
@@ -1254,4 +1257,11 @@ hr {
 .text-color
 {
 	color:#3498DB;
+}
+.form
+{
+	 margin-top:5%;
+	 margin-right:5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
 }
