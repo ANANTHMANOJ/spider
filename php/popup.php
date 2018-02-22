@@ -7,7 +7,7 @@ $name=$_POST['name'];
 $mobile=$_POST['mobile'];
 $you_are=$_POST['position'];//radio value
 
-$study=array();
+//$study=array();
 $course=$_POST['course'];//checkbox value
 $i=implode(',',$course);
 
