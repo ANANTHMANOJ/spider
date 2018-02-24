@@ -29,7 +29,7 @@
 	<!-- Fixed navbar -->
 	
 	<div class="navbar navbar-inverse" >
-		<div class="container col-sm-12">
+		<div class="container ">
 		<div class="fluid_container">                       
                     <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
                         <div data-thumb="assets/images/slides/thumbs/main2.jpg" data-src="assets/images/slides/main2.jpg">
@@ -183,32 +183,34 @@
 	</footer>
 
 	<!--popup-->
-	<div id="boxes" >
-  <div style="margin-top:3%; left: 351.5px; display: none;" id="dialog" class="window col-md-2 col-sm-12"> Hi, help us to serve you better
-
-    <div id="lorem"  >
-      <p>
+	<div class="popScroll">
+<div class="popup window" >
+<span class="ribbon top-left ribbon-primary " >
+<small>Hello!</small>
+</span> 
+<h1>Help Us to Serve You Better</h1>
+  <div class="subscribe-widget">
 		<form action="php/popupmail.php" method="POST">
 		<div class="col-md-12">
-		 <div class="col-md-4 col-sm-12">
+		 <div class="col-md-6 col-sm-12">
 			<div class="w3-row w3-section">
-			<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+			<div class="w3-col " style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
 			<div class="w3-rest">
-			<input class="w3-input w3-border form-control" name="name" style="width:100%;" type="text" placeholder="Name">
+			<input class=" form-control" name="name" style="width:100%;" type="text" placeholder="Name">
 			</div>
 			</div>
 		</div>
-		<div class="col-md-4 col-sm-12 ">
+		<div class="col-md-6 col-sm-12 ">
 			<div class="w3-row w3-section">
 			<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
 			<div class="w3-rest">
-			<input class="w3-input w3-border form-control" style="width:100%;" name="mobile" type="text" placeholder="Moblie">
+			<input class="form-control" style="width:100%;" name="mobile" type="text" placeholder="Moblie">
 			</div>
 			</div>
 		</div>
 		</div>
 		<br/>
-		<div class="col-md-12 col-sm-12">
+		<div class="col-md-12 col-sm-6">
 		<label>You are :</label>
 		<label class="radio">
     <input id="radio1" type="radio" name="position" value="student" checked>
@@ -220,29 +222,29 @@
     <input id="radio1" type="radio" name="position" value="other">
     <span class="outer"><span class="inner"></span></span>Other</label>
 	</div>
-	<div class="col-md-12">
+	<div class="col-md-12 col-sm-6">
    <label>Course you are looking for</label>
    <br/>
-   <div class="col-md-2">
+   <div class="col-md-2 col-sm-2">
   <input type="checkbox" name="course[]" value="cpt">CPT
   </div>
-  <div class="col-md-2">
+  <div class="col-md-2 col-sm-2">
   <input type="checkbox" name="course[]" value="ipcc_old">IPCC (old)
   </div>
-  <div class="col-md-2">
+  <div class="col-md-2 col-sm-2">
   <input type="checkbox" name="course[]" value="ipcc_new">IPCC (new)
   </div>
-  <div class="col-md-2">
+  <div class="col-md-2 col-sm-2">
   <input type="checkbox" name="course[]" value="final_old">Final (old)
   </div>
-  <div class="col-md-2">
+  <div class="col-md-2 col-sm-2">
   <input type="checkbox" name="course[]" value="final_new">Final (new)
   </div>
-  <div class="col-md-2">
+  <div class="col-md-2 col-sm-2">
   <input type="checkbox" name="course[]" value="sap">SAP
   </div>
   </div>
-  <div class="col-md-12">
+  <div class="col-md-12 ">
   <label>Your Next attempt due </label>
   <br/>
   <label class="radio">
@@ -303,11 +305,11 @@
 		 
 		</form>
 	  </p>
-    </div>
+   
    
   </div>
   <div style="width: 1478px; font-size: 32pt; color:white; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
-</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
 <script src="assets/js/main.js"></script>
 
