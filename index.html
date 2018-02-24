@@ -30,7 +30,7 @@
 	
 	<div class="navbar navbar-inverse" >
 		<div class="container col-sm-12">
-		<div class="fluid_container col-sm-12">                       
+		<div class="fluid_container">                       
                     <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
                         <div data-thumb="assets/images/slides/thumbs/main2.jpg" data-src="assets/images/slides/main2.jpg">
                             <h2>We develop.</h2>
@@ -184,97 +184,104 @@
 
 	<!--popup-->
 	<div id="boxes" >
-  <div style="margin-top:5%;top: 199.5px; left: 551.5px; display: none;" id="dialog" class="window col-md-8 col-sm-8"> Hi, help us to serve you better
+  <div style="margin-top:3%; left: 351.5px; display: none;" id="dialog" class="window col-md-2 col-sm-12"> Hi, help us to serve you better
 
-    <div id="lorem" >
+    <div id="lorem"  >
       <p>
 		<form action="php/popupmail.php" method="POST">
-		 <div class="col-md-12 ">
+		<div class="col-md-12">
+		 <div class="col-md-4 col-sm-12">
 			<div class="w3-row w3-section">
 			<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
 			<div class="w3-rest">
-			<input class="w3-input w3-border form-control" name="name" type="text" placeholder="Name">
+			<input class="w3-input w3-border form-control" name="name" style="width:100%;" type="text" placeholder="Name">
 			</div>
 			</div>
 		</div>
-		<div class="col-md-12 ">
+		<div class="col-md-4 col-sm-12 ">
 			<div class="w3-row w3-section">
 			<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
 			<div class="w3-rest">
-			<input class="w3-input w3-border form-control" name="mobile" type="text" placeholder="Moblie">
+			<input class="w3-input w3-border form-control" style="width:100%;" name="mobile" type="text" placeholder="Moblie">
 			</div>
 			</div>
 		</div>
-		
-		
-		
+		</div>
+		<br/>
+		<div class="col-md-12 col-sm-12">
 		<label>You are :</label>
 		<label class="radio">
     <input id="radio1" type="radio" name="position" value="student" checked>
     <span class="outer"><span class="inner"></span></span>Student</label>
 	<label class="radio">
-    <input id="radio1" type="radio" name="position" value="parent" checked>
+    <input id="radio1" type="radio" name="position" value="parent">
     <span class="outer"><span class="inner"></span></span>Parent</label>
 	<label class="radio">
-    <input id="radio1" type="radio" name="position" value="other" checked>
+    <input id="radio1" type="radio" name="position" value="other">
     <span class="outer"><span class="inner"></span></span>Other</label>
+	</div>
+	<div class="col-md-12">
    <label>Course you are looking for</label>
    <br/>
-   <div class="col-md-4">
+   <div class="col-md-2">
   <input type="checkbox" name="course[]" value="cpt">CPT
   </div>
-  <div class="col-md-4">
+  <div class="col-md-2">
   <input type="checkbox" name="course[]" value="ipcc_old">IPCC (old)
   </div>
-  <div class="col-md-4">
+  <div class="col-md-2">
   <input type="checkbox" name="course[]" value="ipcc_new">IPCC (new)
   </div>
-  <div class="col-md-4">
+  <div class="col-md-2">
   <input type="checkbox" name="course[]" value="final_old">Final (old)
   </div>
-  <div class="col-md-4">
+  <div class="col-md-2">
   <input type="checkbox" name="course[]" value="final_new">Final (new)
   </div>
-  <div class="col-md-4">
+  <div class="col-md-2">
   <input type="checkbox" name="course[]" value="sap">SAP
   </div>
-  
+  </div>
+  <div class="col-md-12">
   <label>Your Next attempt due </label>
   <br/>
   <label class="radio">
     <input id="radio1" type="radio" name="due" value="may_18" checked>
     <span class="outer"><span class="inner"></span></span>May'18</label>
 	<label class="radio">
-    <input id="radio1" type="radio" name="due" value="nov_18" checked>
+    <input id="radio1" type="radio" name="due" value="nov_18" >
     <span class="outer"><span class="inner"></span></span>Nov'18</label>
 	<label class="radio">
-    <input id="radio1" type="radio" name="due" value="may_19" checked>
+    <input id="radio1" type="radio" name="due" value="may_19" >
     <span class="outer"><span class="inner"></span></span>May'19</label>
 	<label class="radio">
-    <input id="radio1" type="radio" name="due" value="nov_19" checked>
+    <input id="radio1" type="radio" name="due" value="nov_19" >
     <span class="outer"><span class="inner"></span></span>Nov'19</label>
 	<label class="radio">
-    <input id="radio1" type="radio" name="due" value="after_nov_19" checked>
+    <input id="radio1" type="radio" name="due" value="after_nov_19">
     <span class="outer"><span class="inner"></span></span>After Nov'19</label>
-	  <br/>
+	 </div>
+	 <div class="col-md-12">
   <label>Have you completed articleship</label>
 <br/>
    <label class="radio">
     <input id="radio1" type="radio" name="article" value="yes" checked>
     <span class="outer"><span class="inner"></span></span>Yes</label>
 	<label class="radio">
-    <input id="radio1" type="radio" name="article" value="just_joined" checked>
+    <input id="radio1" type="radio" name="article" value="just_joined" >
     <span class="outer"><span class="inner"></span></span>Just Joined</label>
 	<label class="radio">
-    <input id="radio1" type="radio" name="article" value="last-6-month" checked>
+    <input id="radio1" type="radio" name="article" value="last-6-month">
     <span class="outer"><span class="inner"></span></span>Last 6 Months</label>
+	</div>
+	<div class="col-md-12">
   <label>Is it your first attempt ?</label>
   <br/>
   <label class="radio">
     <input id="radio1" type="radio" name="attempt" value="yes" checked>
     <span class="outer"><span class="inner"></span></span>Yes</label>
 	<label class="radio">
-    <input id="radio1" type="radio" name="attempt" value="no" checked>
+    <input id="radio1" type="radio" name="attempt" value="no" >
     <span class="outer"><span class="inner"></span></span>No</label>
   <div class="col-md-12 submitting"> 
   <div class="col-md-6">
@@ -284,7 +291,7 @@
     <input class="close agree" type="submit" value="Skip" onclick="#"/>
 	</div>
 	</div>
-
+</div>
 	
 	
 </div> <!-- End div center   -->
