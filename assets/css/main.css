@@ -9,8 +9,8 @@
 #boxes .window {
   position:absolute;
   left:0;
-  top:0;
-  width:440px;
+  top:10;
+  width:60%;
   height:200px;
   display:none;
   z-index:9999;
@@ -19,7 +19,7 @@
   text-align: center;
 }
 #boxes #dialog {
-  width:440px; 
+  width:60%; 
   height:auto;
   padding:10px;
   background-color:#ffffff;
