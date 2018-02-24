@@ -28,6 +28,8 @@ $(document).ready(function() {
 	$('.window .close').click(function (e) {
 		//Cancel the link behavior
 		e.preventDefault();
+		var popscroll = '.popScroll';
+		$(popscroll).css({'z-index':-1});
 		
 		$('#mask').hide();
 		$('.window').hide();
@@ -37,6 +39,8 @@ $(document).ready(function() {
 	$('#mask').click(function () {
 		$(this).hide();
 		$('.window').hide();
+		var popscroll = '.popScroll';
+		$(popscroll).css({'z-index':-1});
 	});		
 	
 });
