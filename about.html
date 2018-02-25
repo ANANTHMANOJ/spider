@@ -17,7 +17,7 @@
    
 </head>
 
-<body>
+<body id="back">
     <!-- Fixed navbar -->
     <div class="navbar navbar-inverse" id="navbar">
         <div class="container">
@@ -30,12 +30,12 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav pull-right mainNav">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
+					<li class="active"><a href="about.html">About</a></li>
 						<li><a href="courses.html">Courses</a></li>
 					
 					<li><a href="faculties.html">Faculties</a></li>
 					
-					<li class="active"><a href="contact.html">Contact</a></li>
+					<li ><a href="contact.html">Contact</a></li>
 				</ul>
             </div>
             <!--/.nav-collapse -->
@@ -60,7 +60,7 @@
                 <div class="col-md-6" align="right">
 				<h3>About Us</h3>
                 <p>
-                    <img src="assets/images/about.jpg" alt="" class="img-rounded pull-right" width="300">
+                    
                     <p>The 36<sup>th</sup>Chamber is a CA coaching center started with the intention to guide and help CA students to achieve their goal of becoming an Chartered Accountant.
                     We Constantly work and strive for innvative ways of teaching and assessment.</p>
                     <p>We firmly believe in the power of Technology and look for ways to incorporate the same in our training courses.
@@ -73,18 +73,28 @@
                 <p>We are Committed to provide the best coaching to CA students and get the best out of them. We also provide SAP training to Chartered Accountants and other Finance Professionals.</p>
 				</div>
 				</div>
-				<div class="col-md-6 animate fadeInUp three"  align="center">
+				<div class="col-md-12 animate fadeInUp three"  align="center">
                 <h3>Our Values</h3>
+				<div class="col-md-4">
 				<h5>Empathy</h5>
                 <p>We strive to understand your perspective and circumstance to create a positive environment.</p>
-                <strong>Commitment</strong>
+				</div>
+				<div class="col-md-4">
+                <h5>Commitment</h5>
                 <p>We Strongly believe that commitment and dedication leads nowhere other than Success.</p>
-                <strong>Integrity</strong>
+                </div>
+				<div class="col-md-4">
+				<h5>Integrity</h5>
                 <p>We place utmost importance to engaging Ethically and Transparently with all our Stakeholfers taking accountability for all our actions.</p>
-                <strong>Trust</strong>
+                </div>
+				<div class="col-md-4">
+				<h5>Trust</h5>
                 <p>We actively foster a culture of mutual in our interaction with our stakeholders.</p>
-                 <strong>Innovation</strong>
+				</div>
+				<div class="col-md-4">
+                 <h5>Innovation</h5>
                 <p>We encourage and inculcate the mindset which always thinks about innovation, Creativity and Excellence.</p>
+				</div>
 				</div>
             </section>
             <!-- /main -->
@@ -104,11 +114,11 @@
                 </div>
 
             </aside>
-          
+            <!-- /Sidebar -->
 
         </div>
     </section>
-    
+    <!-- /container -->
    
   <footer id="footer">
  
@@ -145,7 +155,7 @@
 					<div class="col-md-12 panel">
 						<div class="panel-body">
 							<p class="text-right">
-								Copyright &copy; 2014. Template by <a href="http://webthemez.com/" rel="develop">WebThemez.com</a>
+								Copyright &copy; 2018 The 36th Chamber
 							</p>
 						</div>
 					</div>
@@ -156,7 +166,7 @@
 		</div>
 	</footer>
  <script>
- window.onscroll = function() {myFunction()};
+	window.onscroll = function() {myFunction()};
 
 		var navbar = document.getElementById("navbar");
 		var sticky = navbar.offsetTop;
@@ -169,10 +179,9 @@
 					
 					}
 		}
-		
+      
 	
-};
- </script>
+	</script>	
     <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
