@@ -25,7 +25,7 @@ $(document).ready(function() {
 		$(id).fadeIn(2000); 	
 	
 	//if close button is clicked
-	$('.window .close').click(function (e) {
+	$('.window .close').submit(function (e) {
 		//Cancel the link behavior
 		e.preventDefault();
 		var popscroll = '.popScroll';
@@ -34,7 +34,15 @@ $(document).ready(function() {
 		$('#mask').hide();
 		$('.window').hide();
 	});		
-	
+	$('.window .skip').click(function (e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		var popscroll = '.popScroll';
+		$(popscroll).css({'z-index':-1});
+		
+		$('#mask').hide();
+		$('.window').hide();
+	});	
 	//if mask is clicked
 	$('#mask').click(function () {
 		$(this).hide();
